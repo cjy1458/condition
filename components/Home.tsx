@@ -36,12 +36,12 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
     },
     {
       id: 'store',
-      title: '편의점 행사',
+      title: '편의점 찾기',
       icon: <MapPin className="w-6 h-6" />,
-      desc: '내 주변 컨디션\n최저가 찾기',
+      desc: '내 주변 컨디션\n판매처 찾기',
       color: 'bg-purple-500',
       delay: '300ms',
-      action: () => alert('🚧 GPS 연동 준비 중입니다!\n주변 편의점 1+1 행사를 곧 만나보세요.')
+      action: () => alert('🚧 지도 연동 준비 중입니다!\n가까운 편의점 위치를 곧 확인하세요.')
     }
   ];
 
@@ -52,8 +52,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         <div className="flex justify-between items-start mb-4">
             <h2 className="text-4xl font-black text-white leading-[1.15] drop-shadow-lg">
             오늘 술자리,<br />
-            <span className="text-[#c3e02e]">확 깬 상태</span>로<br/>
-            시작해볼까?
+            <span className="text-[#c3e02e]">텐션</span> 끌어올려볼까?
             </h2>
             <img 
                 src={logoSrc}
